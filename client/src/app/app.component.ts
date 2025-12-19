@@ -13,7 +13,7 @@ export class App implements OnInit {
   protected members = signal<any>([]);
 
   constructor(private http: HttpClient) {}
-
+    
   async ngOnInit() {
     this.members.set(await this.getMembers());
   }
